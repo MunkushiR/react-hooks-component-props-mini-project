@@ -1,6 +1,9 @@
+
+ 
+
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
-import About from "../components/About";
+import About from "../components/about";
 
 test("renders a <aside> element", () => {
   const { container } = render(<About />);
@@ -26,4 +29,4 @@ test("renders a <p> with the about text", () => {
   const p = screen.queryByText("About this blog");
   expect(p).toBeInTheDocument();
   expect(p.tagName).toBe("P");
-});
+})
